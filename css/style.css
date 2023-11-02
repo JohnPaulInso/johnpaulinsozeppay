@@ -836,7 +836,7 @@ ul.dropdown-menu li {
   background-size: cover;
   padding: 1000x 0px;
   min-height: 700px;
-  animation: fadeRightToLefts .6s ease-in-out ;	
+  animation: fadeRightToLeft .6s ease-in-out ;	
 }
 @keyframes fadeRightToLeft {
   0% {
