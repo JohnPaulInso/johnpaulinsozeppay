@@ -141,6 +141,7 @@ position:absolute;
   text-align: center;
   font-size: 18px;
   line-height: 32px;
+  z-index: 10;
 }
 
 .slider {
@@ -148,7 +149,6 @@ position:absolute;
   background: linear-gradient(to right, #FF62AE, #FFA703);
   position:relative;
   top:18px;
-  z-index:-1;
 }
 
 
@@ -828,7 +828,7 @@ ul.dropdown-menu li {
   padding: 1000x 0px;
   min-height: 700px;
 }
-.site-banner {
+.site-banners {
   position: relative;
   overflow: hidden;
   background: #fff;
