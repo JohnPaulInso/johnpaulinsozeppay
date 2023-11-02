@@ -53,24 +53,90 @@
 
 
 
+<!-- navigation -->
+<header class="navigation bg-tertiary">
+	<nav class="navbar navbar-expand-lg py-1 navigation header-padding bg-white text-right" 
+	style="position:fixed;  box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.3);z-index:200;
+	"  id="navbar">
+	<nav class="navbar navbar-expand-xl navbar-light text-center py-2 w-100 text-right">
+		<div class="container justify-content-end">
+			<a class="navbar-brand" href="index.html">
+				<img src="https://www.zeppay.com/assets/img/logo2.png" alt="" style="height:40px;" class="img-fluid">
+			</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse text-right justify-content-end" id="navbarSupportedContent">
+	
+				<ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-right justify-content-end w-100">
+					<li class="nav-item"> <a class="nav-link" href="/theme/index.html">Home</a></li>
+	
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							
+							Who can Use <i class="fas fa-caret-down"></i>
+						</a>
 
-  <div id="navbar"></div>
-  <script>
-	  document.addEventListener("DOMContentLoaded", function () {
-		  var xhr = new XMLHttpRequest();
-		  xhr.open("GET", "../navbar.html", true);
-		  xhr.onreadystatechange = function () {
-			  if (xhr.readyState === 4) {
-				  if (xhr.status === 200) {
-					  document.getElementById("navbar").innerHTML = xhr.responseText;
-				  } else {
-					  document.getElementById("navbar").innerHTML = "Error loading navbar.html";
-				  }
-			  }
-		  };
-		  xhr.send();
-	  });
-  </script>
+							
+						<ul class="dropdown-menu multi-column p-2 mt-3" style="width:1100px;margin-left:-500px; box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.4);z-index:1;" aria-labelledby="navbarDropdown">
+							<div class="container">
+								<div class="row">
+									<div class="col-md-3">
+											<li><a class="dropdown-item" href="/theme/use/integrations-zoho.html">Zoho Users</a></li>
+											<li><a class="dropdown-item" href="/theme/use/integrations-Quickbooks.html">Quickbook Users</a></li>
+											<li><a class="dropdown-item" href="/theme/use/integrations-xero.html">Xero Users</a></li>
+											<li><a class="dropdown-item" href="/theme/use/integrations-wave.html">Wave Users</a></li>
+											<li><a class="dropdown-item" href="/theme/use/integrations-sap.html">SAP Users</a></li>
+								
+									</div>
+									<div class="col-md-3">
+											<li><a class="dropdown-item" href="/theme/use/integrations-FreshBooks.html">Freshbook Users</a></li>
+											<li><a class="dropdown-item" href="/theme/use/chits.html">Chits</a></li>
+											<li><a class="dropdown-item" href="/theme/use/school.html">Schools</a></li>
+											<li><a class="dropdown-item" href="/theme/use/Money-lenders.html">Money Lenders</a></li>
+											<li><a class="dropdown-item" href="/theme/use/Hire-purchase.html">Hire Purchase</a></li>
+									
+									</div>
+									<div class="col-md-3">
+											<li><a class="dropdown-item" href="/theme/use/Vehicle-rentals.html">Vehicle Rentals</a></li>
+											<li><a class="dropdown-item" href="/theme/use/Gyms-Fitness-Centers.html">Gyms</a></li>
+											<li><a class="dropdown-item" href="/theme/use/Vocational-Schools.html">Vocational Schools</a></li>
+											<li><a class="dropdown-item" href="/theme/use/Building-Apartment-Maintenance.html">Building Maintenance</a></li>
+											<li><a class="dropdown-item" href="/theme/use/Insurance-premiums.html">Insurance Premiums</a></li>
+										
+									</div>
+									<div class="col-md-3">
+											<li><a class="dropdown-item" href="/theme/use/Magazine-billing.html">Magazine Billing</a></li>
+											<li><a class="dropdown-item" href="/theme/use/Machinery-Rentals.html">Machinery Rentals</a></li>
+											<li><a class="dropdown-item" href="/theme/use/saas.html">SaaS Companies</a></li>
+											<li><a class="dropdown-item" href="/theme/use/Debt-Collection-Software.html">Debt Collection Software</a></li>
+											<li><a class="dropdown-item" href="/theme/use/Sports-Academy-Fees-Collection-Software.html">Sports Academy</a></li>
+									
+									</div>
+								</div>
+							</div>
+						</ul>
+					</li>
+	
+					<li class="nav-item"> <a class="nav-link" href="/theme/pricing.html">Pricing</a></li>
+	
+					<li class="nav-item mr-2"> <a class="nav-link mr-2" href="/theme/contact.html">Contact</a></li>
+	
+					<li class="nav-item mr-2">
+						<a style="padding:8px 15px;" href="/theme/login.html" class="btn btn-solid-border d-none d-lg-block ml-4 mr-2">LOGIN</a>
+					</li>
+	
+					<li class="nav-item">
+						<a style="padding:8px 15px;" href="/theme/signup.html" class="btn btn-main d-none d-lg-block">SIGNUP</a>
+					</li>
+	
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	
+</header>
   
 
 
@@ -80,19 +146,11 @@
   position: relative;
   overflow: hidden;
   background: #fff;
-  background: url("/theme/images/bg/pages/freshbook.jpg") no-repeat 100%;
+  background: url("/theme/images/bg/pages/chits.jpg") no-repeat 100%;
   background-size: cover;
   min-height: 700px;
 }
 
-
-.floatright {
-  animation: floating 3s infinite;
-position:absolute;
-top:100px;
-right:400px;
-
-}
 
 </style>
   
@@ -101,18 +159,17 @@ right:400px;
 	<div class="banner-img-part"></div>
 	<div class="container " style="z-index: 20000;">
 		
-		<img src="/theme/images/bg/pages/freshbooklogo.png" class="floatright" style="top:180px;right:400px;" width="180" height="auto">
-
-
 		<div class="row ml-4">
 			<div class="row col-lg-8">
 			</div>
 	
 			<div class="col-lg-4 ">
 				<div class="block">
-					<h1 class="mb-3 pt-3 mt-5" style="font-size:4vh">CHASE YOUR INVOICES DIRECTLY FROM FRESH BOOK
+					<h1 class="mb-3 pt-3 mt-5" style="font-size:4vh">CHASE YOUR INVOICES DIRECTLY FROM CHITS
 					</h1>
-					<p class="mb-4">Collect your Invoices 3 times faster by sending reminders with payment links!
+					<p class="mb-4">We can help you collect your Chits 3 times faster on whatsapp. Reduce cancellations!
+
+
 
 
 
@@ -221,7 +278,7 @@ right:400px;
 
 
 <section class="section awards bg-gray" style="background-color:rgb(245, 245, 245)">
-	<div class="container">
+	<div class="container  ">
 	  <div class="row">
 		<div class="col-lg-10 ">
 		  <div class="why-content ">
