@@ -828,7 +828,7 @@ ul.dropdown-menu li {
   padding: 1000x 0px;
   min-height: 700px;
 }
-.site-banners {
+.site-banner {
   position: relative;
   overflow: hidden;
   background: #fff;
@@ -836,7 +836,7 @@ ul.dropdown-menu li {
   background-size: cover;
   padding: 1000x 0px;
   min-height: 700px;
-  animation: fadeRightToLeft .6s ease-in-out ;	
+  animation: fadeRightToLefts .6s ease-in-out ;	
 }
 @keyframes fadeRightToLeft {
   0% {
