@@ -129,7 +129,7 @@ position:absolute;
 
   /* Apply the scaling effect on hover */
   .img-fluid:hover {
-    transform: scale(1.05); /* Adjust the scaling factor as needed */
+    transform: scale(1.01); /* Adjust the scaling factor as needed */
   }
 
 
