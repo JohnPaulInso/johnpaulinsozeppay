@@ -18,8 +18,6 @@
 
 
 
-
-
 @import url("https://fonts.googleapis.com/css?family=Rubik:400,500,600,700|Montserrat:900,700");
 html {
   overflow-x: hidden;
@@ -116,6 +114,23 @@ position:absolute;
 
 }
       
+.google-play-link {
+  transition: filter 0.2s ease-in-out;
+}
+
+.google-play-link:hover {
+  filter: brightness(75%);
+}
+
+.img-fluid {
+  transition: transform 0.3s ease-in-out; /* Add a smooth transition effect */
+}
+
+
+  /* Apply the scaling effect on hover */
+  .img-fluid:hover {
+    transform: scale(1.05); /* Adjust the scaling factor as needed */
+  }
 
 
 
