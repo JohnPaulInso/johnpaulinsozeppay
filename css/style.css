@@ -103,9 +103,9 @@ img {
 
     .linebg3 {
       position:absolute;
-      right:0;
-      z-index:100;
-      bottom:-800px;
+        right:0;
+        z-index:100;
+        bottom:-300px;
       
       }
     
