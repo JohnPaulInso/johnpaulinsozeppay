@@ -189,9 +189,138 @@
 
 
 
-  <section class="   py-5 p-5 pt-5" id="section1"  style="background-color:#fafafa">
-	<h2 class="text-center  pt-5">How it works </h2>
-	<p class="text-center pb-4">Just Plug and Play. Completely Automate </p>
+
+
+
+
+	
+  
+  
+  
+  
+<style>
+
+
+/*-=-=-=-=-=-=-=-=-=-*/
+/* Column Grids */
+/*-=-=-=-=-=-=-=-=-= */
+
+.col_half { width: 49%; }
+.col_third { width: 32%; }
+.col_fourth { width: 23.5%; }
+.col_fifth { width: 18.4%; }
+.col_sixth { width: 15%; }
+.col_three_fourth { width: 74.5%;}
+.col_twothird{ width: 66%;}
+.col_half,
+.col_third,
+.col_twothird,
+.col_fourth,
+.col_three_fourth,
+.col_fifth{
+  position: relative;
+  display:inline;
+  display: inline-block;
+  float: left;
+  margin-right: 2%;
+  margin-bottom: 20px;
+}
+.end { margin-right: 0 !important; }
+.text-center {text-align: centesr !important;}
+
+* {
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+}
+.at-work-process {
+min-height:100px;
+position:relative;
+z-index:4;
+overflow:hidden;
+text-align:center;
+	transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+}
+
+.at-work-process-text {
+line-height:40px;
+transition: all 200ms linear 0s;
+	transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+}
+
+.at-work-process:hover .at-work-process-text{
+-webkit-transform: translateY(-150%);
+-moz-transform: translateY(-150%);
+-ms-transform: translateY(-150%);
+-o-transform: translateY(-150%);
+transform: translateY(-150%);
+}
+
+.at-work-process:hover .at-work-process-details {
+z-index: 2;
+opacity: 1;
+bottom: 0;
+-webkit-transition: all 200ms linear;
+-moz-transition: all 200ms linear;
+-o-transition: all 200ms linear;
+-ms-transition: all 200ms linear;
+transition: all 200ms linear;
+}
+
+.at-work-process-number {
+color:#1e83ec;
+font-size: 50px;
+font-weight:100;
+letter-spacing: -2px;
+display:block;
+}
+
+.at-work-process-number-text {
+font-family:Open Sans ;
+font-size:13px;
+font-weight:600;
+color: #000000;
+letter-spacing: 2px;
+text-transform: uppercase;
+}
+
+.at-separator-thick {
+background: #d4d4d4;
+margin:3% auto;
+height:4px;
+width:30px;
+}
+
+.at-work-process-details {
+bottom:-60px;
+height:100%;
+left:0;
+opacity:0;
+width:100%;
+position:absolute;
+display:block;
+}
+.at-work-process-details i {
+color: #1e83ec;
+margin-bottom:15px;
+display:block;
+font-size: 40px;
+}
+.at-work-process-details span{
+font-size:11px;
+line-height:15px;
+text-transform:uppercase;
+}
+ .at-work-process-number,
+  .at-work-process-details i,
+  .at-work-process-details span {
+	color: #F4104E;
+  }
+  
+  
+  
+</style>
 
 
 
@@ -200,56 +329,176 @@
 
 
 
-    <div class="container mt-5 mb-5" >
-            <div class="col">
-                <div class="slider mt-4" style="z-index:0"></div>
-            </div>
-            
-            <div class="row mr-2" style="z-index:100000">
-				<div class="col-md-4  pr-4">
-					<div class="circle" >1</div>
-					<div class="content pt-5 floathome" >
-						<div class="text-left">
-							<img src="images/bg/icons/howit1.png" width="80" style="float: left; margin-right: 20px;"> 
-						</div>
-						<h5>Easy Import</h5>
-						<p style="text-align: none;">Import or synchronize your data in Excel with our  partner software solutions.</p>
-					</div>
-				</div>
-				
-				<div class="col-md-4  pr-4">
-					<div class="circle">2</div>
-					<div class="content pt-5 floathome" >
-						<div class="text-left">
-							<img src="images/bg/icons/howit2.png" width="80" height="" style="float: left; margin-right: 20px;">
-						</div>
-						<h5>Reminders</h5>
-						<p style="text-align: none;">Set Automatic Reminders via WhatsApp, SMS, and email so will not forget.</p>
-					</div>
-				</div>
-				
-				<div class="col-md-4  pr-0">
-					<div class="circle" style="background: #FF9B00; box-shadow: 0 0 0 8px rgba(216, 133, 8, 0.273);">3</div>
-					
-					<div class="content pt-5 floathome" >
-						<div class="text-left">
-							<img src="images/bg/icons/howit3.png" width="80" height="" style="float: left; margin-right: 20px;">
-						</div>
-						<h5>Manage Transactions</h5>
-						<p style="text-align: none;">Identify those who haven't paid their bills and take the required steps.
 
-						</p>
-					</div>
-				</div>
-			</div>
-			
-        </div>
+<section class="py-5 mt-5 pt-5" id="section1">
+
 		
-    </div>
+		
+		  <div class="container" style="padding-top:5%">
+			<div class="col_fifth">
+			  <div class="at-work-process position-relative overflow-hidden text-center">
+				<div class="at-work-process-text">
+				  <span class="at-work-process-number">01</span>
+				  <span class="at-work-process-number-text">Invoice</span>
+				  <div class="at-separator-thick"></div>
+				</div>
+				<div class="at-work-process-details">
+					<i class="fa fa-credit-card"></i><span>Process invoices for services rendered.</span>
+				</div>
+			  </div>
+			</div>
+			<div class="col_fifth">
+			  <div class="at-work-process position-relative overflow-hidden text-center">
+				<div class="at-work-process-text">
+				  <span class="at-work-process-number">02</span>
+				  <span class="at-work-process-number-text">Claims Processing</span>
+				  <div class="at-separator-thick"></div>
+				</div>
+				<div class="at-work-process-details">
+					<i class="fa fa-credit-card"></i><span>Handle payment claims and process them.</span>
+				</div>
+			  </div>
+			</div>
+			<div class="col_fifth">
+			  <div class="at-work-process position-relative overflow-hidden text-center">
+				<div class="at-work-process-text">
+				  <span class="at-work-process-number">03</span>
+				  <span class="at-work-process-number-text">Payment Due</span>
+				  <div class="at-separator-thick"></div>
+				</div>
+				<div class="at-work-process-details">
+					<i class="fa fa-credit-card"></i><span>Track and manage payments that are due.</span>
+				</div>
+			  </div>
+			</div>
+			<div class="col_fifth">
+			  <div class="at-work-process position-relative overflow-hidden text-center">
+				<div class="at-work-process-text">
+				  <span class="at-work-process-number">04</span>
+				  <span class="at-work-process-number-text">Automated Collection</span>
+				  <div class="at-separator-thick"></div>
+				</div>
+				<div class="at-work-process-details">
+				  <i class="fa fa-credit-card"></i><span>Utilize Zeppay for automated payment collection.</span>
+				</div>
+			  </div>
+			</div>
+			<div class="col_fifth end">
+			  <div class="at-work-process position-relative overflow-hidden text-center">
+				<div class="at-work-process-text">
+				  <span class="at-work-process-number">05</span>
+				  <span class="at-work-process-number-text">Collection Agency</span>
+				  <div class="at-separator-thick"></div>
+				</div>
+				<div class="at-work-process-details">
+				  <i class="fa fa-briefcase"></i><span>Engage a collection agency for outstanding payments.</span>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		  
+		  
+		  
+		
 
+	</section>
+
+
+
+	<section class="py-5 p-5 mt-5 pt-5" id="section2">
+
+
+
+	
+  <h2 class="text-center  pt-5">How it works </h2>
+  <p class="text-center pb-4">Just Plug and Play. Completely Automate </p>
+
+
+
+
+  <div class="container mt-5 mb-5" >
+		  <div class="col">
+			  <div class="slider mt-4" style="z-index:0"></div>
+		  </div>
+		  
+		  <div class="row mr-2" style="z-index:100000">
+			  <div class="col-md-4  pr-4">
+				  <div class="circle" >1</div>
+				  <div class="content pt-5 floathome" >
+					  <div class="text-left">
+						  <img src="images/bg/icons/howit1.png" width="80" style="float: left; margin-right: 20px;"> 
+					  </div>
+					  <h5>Easy Import</h5>
+					  <p style="text-align: none;">Import or synchronize your data in Excel with our  partner software solutions.</p>
+				  </div>
+			  </div>
+			  
+			  <div class="col-md-4  pr-4">
+				  <div class="circle">2</div>
+				  <div class="content pt-5 floathome" >
+					  <div class="text-left">
+						  <img src="images/bg/icons/howit2.png" width="80" height="" style="float: left; margin-right: 20px;">
+					  </div>
+					  <h5>Reminders</h5>
+					  <p style="text-align: none;">Set Automatic Reminders via WhatsApp, SMS, and email so will not forget.</p>
+				  </div>
+			  </div>
+			  
+			  <div class="col-md-4  pr-0">
+				  <div class="circle" style="background: #FF9B00; box-shadow: 0 0 0 8px rgba(216, 133, 8, 0.273);">3</div>
+				  
+				  <div class="content pt-5 floathome" >
+					  <div class="text-left">
+						  <img src="images/bg/icons/howit3.png" width="80" height="" style="float: left; margin-right: 20px;">
+					  </div>
+					  <h5>Manage Transactions</h5>
+					  <p style="text-align: none;">Identify those who haven't paid their bills and take the required steps.
+
+					  </p>
+				  </div>
+			  </div>
+		  </div>
+		  
+	  </div>
+	  
 
 
 </section>
+
+
+
+
+
+
+<script>
+	document.addEventListener("DOMContentLoaded", function() {
+	  const section2 = document.getElementById('section2'); // Selecting the second section
+  
+	  // Function to hide the second section
+	  function hideSection2() {
+		section2.style.display = 'none';
+	  }
+  
+	  // Function to show the second section
+	  function showSection2() {
+		section2.style.display = 'block';
+	  }
+  
+	  // Hover event listeners for span elements with specific numbers
+	  const spans = document.querySelectorAll('.at-work-process-number');
+	  spans.forEach(span => {
+		const spanNumber = span.textContent.trim();
+		if (spanNumber === '04' || spanNumber === '05') {
+		  span.addEventListener('mouseover', hideSection2);
+		  span.addEventListener('mouseout', showSection2);
+		}
+	  });
+	});
+  </script>
+  
+
+
+
 
 
 
@@ -259,12 +508,12 @@
 
 
 
-  <section class="  py-5 pt-3"  style="background-color:#fff">
+  <section class="  py-1 pt-2"  style="background-color:#fff">
 	<div class="container  ">
 		<div class="row align-items-center py-5">
 			<div class="col-lg-6 p-5 align-self-center">
 				<h2 class="text-left">SEND AUTOMATED REMINDERS WITH PAYMENT OPTIONS </h2>
-				<p class="py-3" style="font-size:17px ;">Elevate your patient/customer payment experience with our electronic payment solution, enabling effortless contactless transactions that enhance payment reception, elevate customer engagement, and streamline the payment process.
+				<p class="py-2" style="font-size:17px ;">Elevate your patient/customer payment experience with our electronic payment solution, enabling effortless contactless transactions that enhance payment reception, elevate customer engagement, and streamline the payment process.
 				</p>
 
 				<a href="project.html" class="btn btn-main">FREE SIGN UP<i class="fa fa-angle-right ml-2"></i></a>
@@ -289,7 +538,7 @@
 
 
 
-  <section class="py-5 p-3  grey-col">
+  <section class="py-1 p-3  grey-col">
 	<div class="container">
 		<div class="row align-items-center py-3">
 			<div class="col-lg-7  align-self-center">
@@ -320,7 +569,7 @@
 
 
 
-<section class="  py-5 mb-5 mt-5 pb-5 pt-5" id="section2" style="padding:20vh;background-color:#f8f8f8">
+<section class="  py-5 mb-5 mt-5 pb-5 pt-5" id="section2" style="background-color:#f8f8f8">
 	<h2 class="text-center  pt-5">WHO WE SERVE</h2>
 	<div class="container text-center ">
 
@@ -471,7 +720,7 @@
     <div class="container py-4 ">
         <h4 class="text-center mt-3 pt-4" style="font-size:4vh">Our Payment Partners</h4>
         <p class="p-2 text-center">
-            <img src="images/bg/paymentmethod.png" width="1100" class="px-3" >
+            <img src="images/bg/paymentmethod.png" width="100%" class="px-3" >
         </p>
         <a class="btn btn-lg btn-grn px-4 text-white text-center" href="https://app.zeppay.com/signup?utm_source=Zeppay%20Website&amp;utm_medium=Website&amp;utm_campaign=Button%20On%20Website%20Read%20More&amp;utm_term=Read%20More">Try Now</a>
     </div>
