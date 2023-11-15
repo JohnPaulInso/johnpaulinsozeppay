@@ -470,38 +470,6 @@ text-transform:uppercase;
 
 
 
-<script>
-	document.addEventListener("DOMContentLoaded", function() {
-	  const section2 = document.getElementById('section2'); // Selecting the second section
-  
-	  // Function to hide the second section
-	  function hideSection2() {
-		section2.style.display = 'none';
-	  }
-  
-	  // Function to show the second section
-	  function showSection2() {
-		section2.style.display = 'block';
-	  }
-  
-	  // Hover event listeners for span elements with specific numbers
-	  const spans = document.querySelectorAll('.at-work-process-number');
-	  spans.forEach(span => {
-		const spanNumber = span.textContent.trim();
-		if (spanNumber === '04' || spanNumber === '05') {
-		  span.addEventListener('mouseover', hideSection2);
-		  span.addEventListener('mouseout', showSection2);
-		}
-	  });
-	});
-  </script>
-  
-
-
-
-
-
-
 
 
 <img src="images/bg/line-bg.png" class="linebg3 " style="z-index:1" width="100%" height="auto">
